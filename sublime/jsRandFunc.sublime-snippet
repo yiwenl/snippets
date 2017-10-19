@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+var random = function(min, max) { return min + Math.random() * (max - min);	}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>funcRandom</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

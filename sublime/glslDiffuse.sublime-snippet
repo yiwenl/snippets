@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+float diffuse(vec3 N, vec3 L) {
+	return max(dot(N, normalize(L)), 0.0);
+}
+
+
+vec3 diffuse(vec3 N, vec3 L, vec3 C) {
+	return diffuse(N, L) * C;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>funcDiffuse</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.glsl</scope>
+</snippet>

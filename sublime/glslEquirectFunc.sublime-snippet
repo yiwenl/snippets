@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+vec2 envMapEquirect(vec3 wcNormal, float flipEnvMap) {
+  float phi = acos(-wcNormal.y);
+  float theta = atan(flipEnvMap * wcNormal.x, wcNormal.z) + PI;
+  return vec2(theta / TwoPI, phi / PI);
+}
+
+vec2 envMapEquirect(vec3 wcNormal) {
+    return envMapEquirect(wcNormal, -1.0);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>funcEquirect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.glsl</scope>
+</snippet>
