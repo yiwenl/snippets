@@ -10,5 +10,5 @@ glslRotate2D
 
 
 
-### 
-https://github.com/james2doyle/sublime-to-atom-snippets
+# atomizr
+https://github.com/idleberg/atomizr.rb
